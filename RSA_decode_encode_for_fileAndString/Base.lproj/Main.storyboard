@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xc7-yp-uMB">
+                                <rect key="frame" x="26" y="28" width="144" height="30"/>
+                                <state key="normal" title="生成私钥和公钥"/>
+                                <connections>
+                                    <action selector="btnCreateKeyClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yDA-ku-Rhu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHZ-uA-gFG">
+                                <rect key="frame" x="26" y="59" width="144" height="30"/>
+                                <state key="normal" title="导入文本公钥"/>
+                                <connections>
+                                    <action selector="inputPublic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDN-3P-kuD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAy-RM-NFH">
+                                <rect key="frame" x="26" y="87" width="144" height="30"/>
+                                <state key="normal" title="导入文件公钥"/>
+                                <connections>
+                                    <action selector="inputFilePublic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVM-4j-uvF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbz-Gp-B4K">
+                                <rect key="frame" x="26" y="114" width="144" height="30"/>
+                                <state key="normal" title="导入文本私钥"/>
+                                <connections>
+                                    <action selector="inputprivate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYO-gF-KsS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owJ-bf-fSo">
+                                <rect key="frame" x="26" y="141" width="144" height="30"/>
+                                <state key="normal" title="导入文件私钥"/>
+                                <connections>
+                                    <action selector="inputFilePrivate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzJ-GT-myL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3N-FO-Yqo">
+                                <rect key="frame" x="26" y="172" width="144" height="30"/>
+                                <state key="normal" title="公钥加密"/>
+                                <connections>
+                                    <action selector="publicEncode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XUB-cZ-nXi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Uk-9x-QE0">
+                                <rect key="frame" x="26" y="200" width="144" height="30"/>
+                                <state key="normal" title="公钥解密"/>
+                                <connections>
+                                    <action selector="publicDecode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MMm-jD-EYo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zE9-ba-pok">
+                                <rect key="frame" x="26" y="227" width="144" height="30"/>
+                                <state key="normal" title="私钥加密"/>
+                                <connections>
+                                    <action selector="privateEncode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GfW-p4-WLb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckp-w8-6g0">
+                                <rect key="frame" x="26" y="254" width="144" height="30"/>
+                                <state key="normal" title="私钥解密"/>
+                                <connections>
+                                    <action selector="privateDecode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qoQ-2O-hAI"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JEz-dP-6ZB">
+                                <rect key="frame" x="26" y="321" width="274" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qgz-J0-Bmd"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="要加密或解密文本:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yP8-y0-z8J">
+                                <rect key="frame" x="26" y="292" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="加密或解密后的文本:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZo-bh-z5v">
+                                <rect key="frame" x="26" y="368" width="166" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FR-aC-qe6">
+                                <rect key="frame" x="26" y="397" width="274" height="158"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lb_result" destination="3FR-aC-qe6" id="JSh-Zn-17L"/>
+                        <outlet property="tf_encodeordecode" destination="JEz-dP-6ZB" id="YuT-7K-Aa5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="396"/>
+        </scene>
+    </scenes>
+</document>
