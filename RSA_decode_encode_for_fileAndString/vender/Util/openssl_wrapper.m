@@ -8,11 +8,11 @@
 
 #import "openssl_wrapper.h"
 
-#import "rsa.h"
-#include "pem.h"
-#include "md5.h"
-#include "bio.h"
-#include "sha.h"
+#import <OpenSSL/rsa.h>
+#import <OpenSSL/pem.h>
+#import <OpenSSL/md5.h>
+#import <OpenSSL/bio.h>
+#import <OpenSSL/sha.h>
 #include <string.h>
 
 
