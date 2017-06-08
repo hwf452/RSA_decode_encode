@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67A5D7057ADF7D8011859FC4 /* libPods-RSA_decode_encode_for_fileAndString.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F68F76137C41FFE195BF47 /* libPods-RSA_decode_encode_for_fileAndString.a */; };
 		7E4C85881D6D3C26004937F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4C85871D6D3C26004937F4 /* main.m */; };
 		7E4C858B1D6D3C26004937F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4C858A1D6D3C26004937F4 /* AppDelegate.m */; };
 		7E4C858E1D6D3C26004937F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4C858D1D6D3C26004937F4 /* ViewController.m */; };
 		7E4C85911D6D3C26004937F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4C858F1D6D3C26004937F4 /* Main.storyboard */; };
 		7E4C85931D6D3C26004937F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4C85921D6D3C26004937F4 /* Assets.xcassets */; };
 		7E4C85961D6D3C26004937F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4C85941D6D3C26004937F4 /* LaunchScreen.storyboard */; };
-		7E4C86041D6D3CF7004937F4 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4C859E1D6D3CF7004937F4 /* libcrypto.a */; };
-		7E4C86051D6D3CF7004937F4 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4C859F1D6D3CF7004937F4 /* libssl.a */; };
 		7E4C86061D6D3CF7004937F4 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4C85EE1D6D3CF7004937F4 /* base64.m */; };
 		7E4C86071D6D3CF7004937F4 /* BBRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4C85F01D6D3CF7004937F4 /* BBRSACryptor.m */; };
 		7E4C86081D6D3CF7004937F4 /* DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4C85F31D6D3CF7004937F4 /* DataSigner.m */; };
@@ -35,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		209B7E55B19D468642C9F64A /* Pods-RSA_decode_encode_for_fileAndString.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSA_decode_encode_for_fileAndString.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSA_decode_encode_for_fileAndString/Pods-RSA_decode_encode_for_fileAndString.debug.xcconfig"; sourceTree = "<group>"; };
+		32F68F76137C41FFE195BF47 /* libPods-RSA_decode_encode_for_fileAndString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSA_decode_encode_for_fileAndString.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E354665E09F46C5C0618A4 /* Pods-RSA_decode_encode_for_fileAndString.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSA_decode_encode_for_fileAndString.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSA_decode_encode_for_fileAndString/Pods-RSA_decode_encode_for_fileAndString.release.xcconfig"; sourceTree = "<group>"; };
 		7E4C85831D6D3C26004937F4 /* RSA_decode_encode_for_fileAndString.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSA_decode_encode_for_fileAndString.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4C85871D6D3C26004937F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E4C85891D6D3C26004937F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -162,20 +164,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E4C86121D6D3D83004937F4 /* Security.framework in Frameworks */,
-				7E4C86051D6D3CF7004937F4 /* libssl.a in Frameworks */,
-				7E4C86041D6D3CF7004937F4 /* libcrypto.a in Frameworks */,
+				67A5D7057ADF7D8011859FC4 /* libPods-RSA_decode_encode_for_fileAndString.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C6BA238827DF927C9E94B75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32F68F76137C41FFE195BF47 /* libPods-RSA_decode_encode_for_fileAndString.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7E4C857A1D6D3C26004937F4 = {
 			isa = PBXGroup;
 			children = (
 				7E4C86111D6D3D83004937F4 /* Security.framework */,
 				7E4C85851D6D3C26004937F4 /* RSA_decode_encode_for_fileAndString */,
 				7E4C85841D6D3C26004937F4 /* Products */,
+				A7639A0D6E5BAF2847CB9406 /* Pods */,
+				0C6BA238827DF927C9E94B75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,19 +201,19 @@
 		7E4C85851D6D3C26004937F4 /* RSA_decode_encode_for_fileAndString */ = {
 			isa = PBXGroup;
 			children = (
-				7E4C859D1D6D3CE7004937F4 /* vender */,
 				7E4C85891D6D3C26004937F4 /* AppDelegate.h */,
 				7E4C858A1D6D3C26004937F4 /* AppDelegate.m */,
-				7E4C858C1D6D3C26004937F4 /* ViewController.h */,
-				7E4C858D1D6D3C26004937F4 /* ViewController.m */,
-				7E4C858F1D6D3C26004937F4 /* Main.storyboard */,
 				7E4C85921D6D3C26004937F4 /* Assets.xcassets */,
-				7E4C85941D6D3C26004937F4 /* LaunchScreen.storyboard */,
-				7E4C85971D6D3C26004937F4 /* Info.plist */,
-				7E4C85861D6D3C26004937F4 /* Supporting Files */,
 				7E4C86191D6D4120004937F4 /* CreateKeyViewController.h */,
 				7E4C861A1D6D4120004937F4 /* CreateKeyViewController.m */,
 				7E4C861B1D6D4120004937F4 /* CreateKeyViewController.xib */,
+				7E4C85971D6D3C26004937F4 /* Info.plist */,
+				7E4C85941D6D3C26004937F4 /* LaunchScreen.storyboard */,
+				7E4C858F1D6D3C26004937F4 /* Main.storyboard */,
+				7E4C85861D6D3C26004937F4 /* Supporting Files */,
+				7E4C859D1D6D3CE7004937F4 /* vender */,
+				7E4C858C1D6D3C26004937F4 /* ViewController.h */,
+				7E4C858D1D6D3C26004937F4 /* ViewController.m */,
 			);
 			path = RSA_decode_encode_for_fileAndString;
 			sourceTree = "<group>";
@@ -343,6 +354,15 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		A7639A0D6E5BAF2847CB9406 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				209B7E55B19D468642C9F64A /* Pods-RSA_decode_encode_for_fileAndString.debug.xcconfig */,
+				38E354665E09F46C5C0618A4 /* Pods-RSA_decode_encode_for_fileAndString.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,9 +370,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E4C859A1D6D3C26004937F4 /* Build configuration list for PBXNativeTarget "RSA_decode_encode_for_fileAndString" */;
 			buildPhases = (
+				6601251067D03ADD9DA569C6 /* [CP] Check Pods Manifest.lock */,
 				7E4C857F1D6D3C26004937F4 /* Sources */,
 				7E4C85801D6D3C26004937F4 /* Frameworks */,
 				7E4C85811D6D3C26004937F4 /* Resources */,
+				7E0EA9013AE8318B633E31E5 /* [CP] Embed Pods Frameworks */,
+				408E681D46BC3B9333A786A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -411,6 +434,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		408E681D46BC3B9333A786A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSA_decode_encode_for_fileAndString/Pods-RSA_decode_encode_for_fileAndString-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6601251067D03ADD9DA569C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E0EA9013AE8318B633E31E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSA_decode_encode_for_fileAndString/Pods-RSA_decode_encode_for_fileAndString-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E4C857F1D6D3C26004937F4 /* Sources */ = {
@@ -540,6 +611,7 @@
 		};
 		7E4C859B1D6D3C26004937F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 209B7E55B19D468642C9F64A /* Pods-RSA_decode_encode_for_fileAndString.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -547,6 +619,7 @@
 				GCC_PREFIX_HEADER = "RSA_decode_encode_for_fileAndString/RSA_decode_encode_for_fileAndString-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/RSA_decode_encode_for_fileAndString/vender/";
 				INFOPLIST_FILE = RSA_decode_encode_for_fileAndString/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -560,6 +633,7 @@
 		};
 		7E4C859C1D6D3C26004937F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E354665E09F46C5C0618A4 /* Pods-RSA_decode_encode_for_fileAndString.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -567,6 +641,7 @@
 				GCC_PREFIX_HEADER = "RSA_decode_encode_for_fileAndString/RSA_decode_encode_for_fileAndString-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/RSA_decode_encode_for_fileAndString/vender/";
 				INFOPLIST_FILE = RSA_decode_encode_for_fileAndString/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -597,6 +672,7 @@
 				7E4C859C1D6D3C26004937F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
